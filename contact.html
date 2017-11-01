@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Contacto
 call_to_action: Map
 background_image_path:
 large_header: false
@@ -12,44 +12,42 @@ map:
 ---
 
 <p class="editable">
-	Come see us in person, give us a call, or send us a message with your details and we'll be in contact shortly after. No obligations and your first meeting is free.
+	Envía tu consulta a través del formulario de contacto y me pondré en contacto contigo a la mayor brevedad posible. La primera consulta es totalmente gratuita.
 </p>
 
 <div class="columns">
 	<div class="column">
 		<p class="editor-link"><a href="cloudcannon:collections/_data/company.yml" class="btn"><strong>&#9998;</strong> Update Company Details</a></p>
 
-		<label>Phone Number</label>
-		<p class="contact-info"><a href="tel:{{ site.data.company.contact_phone_number }}">{{ site.data.company.contact_phone_number }}</a></p>
+		<!-- <label>Phone Number</label>
+		<p class="contact-info"><a href="tel:{{ site.data.company.contact_phone_number }}">{{ site.data.company.contact_phone_number }}</a></p> -->
 
-		<label>Email Address</label>
+		<label>Mi dirección de correo</label>
 		<p class="contact-info"><a href="mailto:{{ site.data.company.contact_email_address }}">{{ site.data.company.contact_email_address }}</a></p>
 
-		<label>Postal Address</label>
+		<!-- <label>Postal Address</label>
 		<address class="contact-info">{{ site.data.company.postal_address | replace: ',', '<br>' }}</address>
 		<label>Address</label>
-		<address class="contact-info">{{ site.data.company.address | replace: ',', '<br>' }}</address>
+		<address class="contact-info">{{ site.data.company.address | replace: ',', '<br>' }}</address> -->
 	</div>
 
 	<div class="column">
-		<form method="post" action="/success.html">
-			<label for="email_address">Email Address</label>
+		<form method="post" action="https://formspree.io/{{ site.data.company.contact_email_address }}">
+			<label for="email_address">Tu dirección de correo electrónico</label>
 			<input id="email_address"type="text" name="email">
 
-			<label for="name">Name</label>
+			<label for="name">Nombre</label>
 			<input id="name" type="text" name="name">
 
-			<label for="message">Message</label>
+			<label for="message">Mensaje</label>
 			<textarea id="message" name="message"></textarea>
 
-			<input type="hidden" name="_to" value="{{ site.data.company.contact_email_address }}">
-			<input type="text" name="_gotcha" style="display: none;">
+			<!-- <input type="text" name="_gotcha" style="display: none;"> -->
 
-			<input type="submit" value="Send Message">
+			<input type="submit" value="Enviar consulta">
 		</form>
 	</div>
 </div>
-
 
 {% if site.google_maps_javascript_api_key and page.call_to_action == 'Map' %}
 	<script>

@@ -10,15 +10,13 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Jekyll template with example content for a law firm.
+description: Informes periciales de Logopedia en Valencia
 author:
-  name:
-  email:
+  name: Laura Vidal Pastor
+  email: laura.vidal.pastor@gmail.com
   twitter: # twitter username without the @ symbol
 social:
-  name: Justice Template
-  links:
-    - https://github.com/CloudCannon/justice-jekyll-template
+  name: Perito Logopeda
 
 # -----
 # Build

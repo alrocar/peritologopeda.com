@@ -111,3 +111,13 @@ _comments:
   credentials: Shown as subtext on staff member summaries.
   contact_email_address: Address for the contact form to send to.
   new_window: Whether the link opens a new browser tab/window.
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: []
+  blanklines: true
+  profile: false
+  startings: [html, head, body]

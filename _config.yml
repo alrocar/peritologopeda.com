@@ -3,7 +3,7 @@
 
 title: Perito Logopeda
 url: "https://www.peritologopeda.com"
-baseurl:
+baseurl: ''
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
@@ -63,7 +63,7 @@ jekyll-archives:
   enabled:
     - categories
 
-gems:
+plugins:
   - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
